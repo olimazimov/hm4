@@ -1,8 +1,8 @@
 # hm4
 <code>
- version: "3.1"
+version: "3.1"
 
- services:
+services:
     db:
      image: postgres:latest
      ports:
@@ -20,7 +20,6 @@
       - 8081:8080
      depends_on:
       - db
-
 
     dbviewer2:
      image: dpage/pgadmin4:latest
