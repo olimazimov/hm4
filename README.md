@@ -8,9 +8,9 @@ services:
      ports:
       - 5432:5432
      environment:
-#      POSTGRES_USER: root
+      POSTGRES_USER: root
       POSTGRES_PASSWORD: root
-#      POSTGRES_DB: postgres
+      POSTGRES_DB: postgres
      volumes:
       - /home/olim/git/hm4/db_data:/var/lib/pgsql/data
 
