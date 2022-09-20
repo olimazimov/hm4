@@ -6,21 +6,21 @@ services:
      ports:
       - 5432:5432
      environment:
-      POSTGRES_USER: root
+#      POSTGRES_USER: root
       POSTGRES_PASSWORD: root
-      POSTGRES_DB: test_db
+#      POSTGRES_DB: postgres
      volumes:
       - /home/olim/git/hm4/db_data:/var/lib/pgsql/data
 
-#    dbviewer:
-#     image: adminer
-#     ports:
-#      - 8080:8080
-#     depends_on:
-#      - db
+    dbviewer1:
+     image: adminer
+     ports:
+      - 8081:8080
+     depends_on:
+      - db
 
 
-    dbviewer:
+    dbviewer2:
      image: dpage/pgadmin4:latest
      ports:
       - 8080:80
