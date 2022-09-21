@@ -1,8 +1,11 @@
 # hm4
 <code>
 version: "3.1"
+<code>
 
+<code>
 services:
+<code>
     db:
      image: postgres:latest
      ports:
