@@ -3,6 +3,7 @@
 version: "3.1"
 
 services:
+
     db:
      image: postgres:latest
      ports:
