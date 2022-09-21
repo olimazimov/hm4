@@ -30,4 +30,5 @@ services:
       PGADMIN_DEFAULT_PASSWORD: root
      depends_on:
       - db
-
+#
+#
