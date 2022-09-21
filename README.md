@@ -1,5 +1,5 @@
 # hm4
-``
+```
 version: "3.1"
 
 services:
@@ -31,4 +31,4 @@ services:
       PGADMIN_DEFAULT_PASSWORD: root
      depends_on:
       - db
-``
+```
