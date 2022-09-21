@@ -3,17 +3,16 @@
 version: "3.1"
 
 services:
-
     db:
-     image: postgres:latest
+     image: postgres:13-alpine
      ports:
       - 5432:5432
      environment:
-      POSTGRES_USER: root
-      POSTGRES_PASSWORD: root
-      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 12345
+#      POSTGRES_DB: postgres
      volumes:
-      - /home/olim/git/hm4/db_data:/var/lib/pgsql/data
+      - ../db_data:/var/lib/postgresql/data
 
     dbviewer1:
      image: adminer
@@ -21,6 +20,7 @@ services:
       - 8081:8080
      depends_on:
       - db
+
 
     dbviewer2:
      image: dpage/pgadmin4:latest
